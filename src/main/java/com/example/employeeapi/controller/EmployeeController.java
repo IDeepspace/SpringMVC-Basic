@@ -9,6 +9,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+import com.example.employeeapi.model.Employee;
+
 @Controller
 @EnableAutoConfiguration
 public class EmployeeController {
@@ -18,7 +21,10 @@ public class EmployeeController {
     @RequestMapping("/employees")
     String getEmployees(Model model) {
 
-        model.addAttribute("message", "hello world");
+        List<Employee> employees = employeeRepository.getAllEmployees();
+
+//        model.addAttribute("message", "hello world");
+        model.addAttribute("employees", employees);
 
         return "employees";
     }
