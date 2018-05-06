@@ -7,30 +7,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>员工列表</title>
-    <style>
-        .box {
-            width: 800px;
-            height: 400px;
-            margin: 100px auto;
-        }
-        .box table {
-            margin: 0 auto;
-        }
-        .box table, .box th, .box td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        .box th {
-            background-color: black;
-            color: white;
-        }
-        .box th, .box td {
-            padding: 10px 70px;
-        }
-        .box tr:nth-child(even) {
-            background-color: gainsboro;
-        }
-    </style>
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
 
